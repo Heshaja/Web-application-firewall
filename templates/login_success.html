@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Login Success</h1>
+        <ul>
+            {% for user in user_data %}
+                <li><strong>User Name:</strong> {{ user.username }}</li>
+                <li><strong>Password:</strong> {{ user.password }}</li>
+                <li><strong>Email:</strong> {{ user.email }}</li>
+                <hr>
+            <!--
+                <li><strong>User Name:</strong> {{ user.UserName }}</li>
+                <li><strong>Password:</strong> {{ user.Email }}</li>
+                <li><strong>Email:</strong> {{ user.Password }}</li>
+                <hr>
+            -->
+            {% endfor %}
+        </ul>
+    </body>
+    </html>
